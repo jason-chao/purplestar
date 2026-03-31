@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "purplestar"
+version = "1.0.0"
+description = "紫微斗數 (Zi Wei Dou Shu) natal chart generator"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "sxtwl>=2.0.7",
+    "click>=8.0",
+    "pytz>=2023.3",
+]
+
+[project.scripts]
+purplestar = "purplestar.cli:cli"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["purplestar*"]

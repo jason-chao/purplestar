@@ -1,0 +1,23 @@
+# Brightness tables indexed by palace position (0=寅, 1=卯, ..., 11=丑)
+STAR_BRIGHTNESS = {
+    'zi_wei':    ['wang','wang','de','wang','miao','miao','wang','wang','de','wang','ping','miao'],
+    'tian_ji':   ['de','wang','li','ping','miao','xian','de','wang','li','ping','miao','xian'],
+    'tai_yang':  ['wang','miao','wang','wang','wang','de','de','xian','bu','xian','xian','bu'],
+    'wu_qu':     ['de','li','miao','ping','wang','miao','de','li','miao','ping','wang','miao'],
+    'tian_tong': ['li','ping','ping','miao','xian','bu','wang','ping','ping','miao','wang','bu'],
+    'lian_zhen': ['miao','ping','li','xian','ping','li','miao','ping','li','xian','ping','li'],
+    'tian_fu':   ['miao','de','miao','de','wang','miao','de','wang','miao','de','miao','miao'],
+    'tai_yin':   ['wang','xian','xian','xian','bu','bu','li','bu','wang','miao','miao','miao'],
+    'tan_lang':  ['ping','li','miao','xian','wang','miao','ping','li','miao','xian','wang','miao'],
+    'ju_men':    ['miao','miao','xian','wang','wang','bu','miao','miao','xian','wang','wang','bu'],
+    'tian_xiang':['miao','xian','de','de','miao','de','miao','xian','de','de','miao','miao'],
+    'tian_liang':['miao','miao','miao','xian','miao','wang','xian','de','miao','xian','miao','wang'],
+    'qi_sha':    ['miao','wang','miao','ping','wang','miao','miao','miao','miao','ping','wang','miao'],
+    'po_jun':    ['de','xian','wang','ping','miao','wang','de','xian','wang','ping','miao','wang'],
+    'wen_chang': ['xian','li','de','miao','xian','li','de','miao','xian','li','de','miao'],
+    'wen_qu':    ['ping','wang','de','miao','xian','wang','de','miao','xian','wang','de','miao'],
+    'huo_xing':  ['miao','li','xian','de','miao','li','xian','de','miao','li','xian','de'],
+    'ling_xing': ['miao','li','xian','de','miao','li','xian','de','miao','li','xian','de'],
+    'qing_yang': ['','xian','miao','','xian','miao','','xian','miao','','xian','miao'],
+    'tuo_luo':   ['xian','','miao','xian','','miao','xian','','miao','xian','','miao'],
+}
