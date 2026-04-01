@@ -1,4 +1,4 @@
-# purplestar — 紫微斗數 Natal Chart Generator
+# purplestar — Purple Star Astrology (紫微斗數) Natal Chart Generator
 
 [繁體中文說明請見 README.zh-Hant.md](README.zh-Hant.md)
 
@@ -17,24 +17,20 @@ A Python package and command-line tool for generating 紫微斗數 (Purple Star 
 
 ## Installation
 
-### Requirements
-
-- Python 3.10 or later
-- A virtual environment (recommended)
-
-### Setup
+Requires Python 3.10 or later.
 
 ```bash
-# Clone the repository
+pip install purplestar
+```
+
+### Install from Source
+
+```bash
 git clone <repository-url>
 cd purplestar_chart
-
-# Create and activate a virtual environment
 python3 -m venv venv
 source venv/bin/activate          # macOS / Linux
 # venv\Scripts\activate.bat       # Windows
-
-# Install the package
 pip install -e .
 ```
 
@@ -264,6 +260,12 @@ purplestar_chart/
 │   └── purplestar_chart_plaintext_format.md # Plain-Text Format for 紫微斗數 Natal Charts
 ├── iztro/                    # Reference TypeScript implementation
 ├── pyproject.toml
+├── LICENSE
 └── README.md
 ```
 
+---
+
+## License
+
+[MIT License](LICENSE) — Copyright (c) 2026 Jason Chao

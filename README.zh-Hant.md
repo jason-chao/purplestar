@@ -17,24 +17,20 @@
 
 ## 安裝
 
-### 系統需求
-
-- Python 3.10 或以上版本
-- 建議使用虛擬環境
-
-### 安裝步驟
+需要 Python 3.10 或以上版本。
 
 ```bash
-# 複製儲存庫
+pip install purplestar
+```
+
+### 從原始碼安裝
+
+```bash
 git clone <repository-url>
 cd purplestar_chart
-
-# 建立並啟用虛擬環境
 python3 -m venv venv
 source venv/bin/activate          # macOS / Linux
 # venv\Scripts\activate.bat       # Windows
-
-# 安裝套件
 pip install -e .
 ```
 
@@ -264,6 +260,13 @@ purplestar_chart/
 │   └── purplestar_chart_plaintext_format.md # Plain-Text Format for 紫微斗數 Natal Charts
 ├── iztro/                    # 參考用 TypeScript 實作
 ├── pyproject.toml
+├── LICENSE
 ├── README.md                 # 英文說明
 └── README.zh-Hant.md         # 本檔案（繁體中文說明）
 ```
+
+---
+
+## 授權條款
+
+[MIT License](LICENSE) — Copyright (c) 2026 Jason Chao
