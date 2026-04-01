@@ -1,0 +1,1963 @@
+{
+  "schema_version": "2.0.0",
+  "chart_type": "ziwei.natal",
+  "default_locale": "zh-Hant",
+  "meta": {
+    "generated_by": "purplestar 1.0.0",
+    "generated_at": "2026-04-01T00:26:00Z"
+  },
+  "subject": {
+    "id": "Michael Reeves"
+  },
+  "birth_data": {
+    "calendar": "solar",
+    "year": 1967,
+    "month": 5,
+    "day": 20,
+    "is_leap_month": false,
+    "hour_branch": "hai",
+    "gender": "male",
+    "timezone": "America/New_York",
+    "place": {
+      "name": "New York, United States"
+    }
+  },
+  "system": {
+    "family": "ziwei_doushu",
+    "school": "三合派",
+    "engine": {
+      "name": "purplestar",
+      "version": "1.0.0"
+    }
+  },
+  "catalog": {
+    "stems": {
+      "jia": {
+        "code": "jia",
+        "labels": {
+          "zh-Hant": "甲",
+          "en": "Jia"
+        }
+      },
+      "yi": {
+        "code": "yi",
+        "labels": {
+          "zh-Hant": "乙",
+          "en": "Yi"
+        }
+      },
+      "bing": {
+        "code": "bing",
+        "labels": {
+          "zh-Hant": "丙",
+          "en": "Bing"
+        }
+      },
+      "ding": {
+        "code": "ding",
+        "labels": {
+          "zh-Hant": "丁",
+          "en": "Ding"
+        }
+      },
+      "wu": {
+        "code": "wu",
+        "labels": {
+          "zh-Hant": "戊",
+          "en": "Wu"
+        }
+      },
+      "ji": {
+        "code": "ji",
+        "labels": {
+          "zh-Hant": "己",
+          "en": "Ji"
+        }
+      },
+      "geng": {
+        "code": "geng",
+        "labels": {
+          "zh-Hant": "庚",
+          "en": "Geng"
+        }
+      },
+      "xin": {
+        "code": "xin",
+        "labels": {
+          "zh-Hant": "辛",
+          "en": "Xin"
+        }
+      },
+      "ren": {
+        "code": "ren",
+        "labels": {
+          "zh-Hant": "壬",
+          "en": "Ren"
+        }
+      },
+      "gui": {
+        "code": "gui",
+        "labels": {
+          "zh-Hant": "癸",
+          "en": "Gui"
+        }
+      }
+    },
+    "branches": {
+      "zi": {
+        "code": "zi",
+        "labels": {
+          "zh-Hant": "子",
+          "en": "Zi"
+        }
+      },
+      "chou": {
+        "code": "chou",
+        "labels": {
+          "zh-Hant": "丑",
+          "en": "Chou"
+        }
+      },
+      "yin": {
+        "code": "yin",
+        "labels": {
+          "zh-Hant": "寅",
+          "en": "Yin"
+        }
+      },
+      "mao": {
+        "code": "mao",
+        "labels": {
+          "zh-Hant": "卯",
+          "en": "Mao"
+        }
+      },
+      "chen": {
+        "code": "chen",
+        "labels": {
+          "zh-Hant": "辰",
+          "en": "Chen"
+        }
+      },
+      "si": {
+        "code": "si",
+        "labels": {
+          "zh-Hant": "巳",
+          "en": "Si"
+        }
+      },
+      "wu": {
+        "code": "wu",
+        "labels": {
+          "zh-Hant": "午",
+          "en": "Wu"
+        }
+      },
+      "wei": {
+        "code": "wei",
+        "labels": {
+          "zh-Hant": "未",
+          "en": "Wei"
+        }
+      },
+      "shen": {
+        "code": "shen",
+        "labels": {
+          "zh-Hant": "申",
+          "en": "Shen"
+        }
+      },
+      "you": {
+        "code": "you",
+        "labels": {
+          "zh-Hant": "酉",
+          "en": "You"
+        }
+      },
+      "xu": {
+        "code": "xu",
+        "labels": {
+          "zh-Hant": "戌",
+          "en": "Xu"
+        }
+      },
+      "hai": {
+        "code": "hai",
+        "labels": {
+          "zh-Hant": "亥",
+          "en": "Hai"
+        }
+      }
+    },
+    "palaces": {
+      "life": {
+        "code": "life",
+        "labels": {
+          "zh-Hant": "命",
+          "en": "Life"
+        }
+      },
+      "parents": {
+        "code": "parents",
+        "labels": {
+          "zh-Hant": "父母",
+          "en": "Parents"
+        }
+      },
+      "spirit": {
+        "code": "spirit",
+        "labels": {
+          "zh-Hant": "福德",
+          "en": "Spirit"
+        }
+      },
+      "property": {
+        "code": "property",
+        "labels": {
+          "zh-Hant": "田宅",
+          "en": "Property"
+        }
+      },
+      "career": {
+        "code": "career",
+        "labels": {
+          "zh-Hant": "事業",
+          "en": "Career"
+        }
+      },
+      "friends": {
+        "code": "friends",
+        "labels": {
+          "zh-Hant": "交友",
+          "en": "Friends"
+        }
+      },
+      "travel": {
+        "code": "travel",
+        "labels": {
+          "zh-Hant": "遷移",
+          "en": "Travel"
+        }
+      },
+      "health": {
+        "code": "health",
+        "labels": {
+          "zh-Hant": "疾厄",
+          "en": "Health"
+        }
+      },
+      "wealth": {
+        "code": "wealth",
+        "labels": {
+          "zh-Hant": "財帛",
+          "en": "Wealth"
+        }
+      },
+      "children": {
+        "code": "children",
+        "labels": {
+          "zh-Hant": "子女",
+          "en": "Children"
+        }
+      },
+      "spouse": {
+        "code": "spouse",
+        "labels": {
+          "zh-Hant": "夫妻",
+          "en": "Spouse"
+        }
+      },
+      "siblings": {
+        "code": "siblings",
+        "labels": {
+          "zh-Hant": "兄弟",
+          "en": "Siblings"
+        }
+      }
+    },
+    "stars": {
+      "zi_wei": {
+        "code": "zi_wei",
+        "labels": {
+          "zh-Hant": "紫微",
+          "en": "Purple Star"
+        }
+      },
+      "tian_ji": {
+        "code": "tian_ji",
+        "labels": {
+          "zh-Hant": "天機",
+          "en": "Heavenly Mechanism"
+        }
+      },
+      "tai_yang": {
+        "code": "tai_yang",
+        "labels": {
+          "zh-Hant": "太陽",
+          "en": "Sun"
+        }
+      },
+      "wu_qu": {
+        "code": "wu_qu",
+        "labels": {
+          "zh-Hant": "武曲",
+          "en": "Military Melody"
+        }
+      },
+      "tian_tong": {
+        "code": "tian_tong",
+        "labels": {
+          "zh-Hant": "天同",
+          "en": "Heavenly Unity"
+        }
+      },
+      "lian_zhen": {
+        "code": "lian_zhen",
+        "labels": {
+          "zh-Hant": "廉貞",
+          "en": "Integrity"
+        }
+      },
+      "tian_fu": {
+        "code": "tian_fu",
+        "labels": {
+          "zh-Hant": "天府",
+          "en": "Heavenly Store"
+        }
+      },
+      "tai_yin": {
+        "code": "tai_yin",
+        "labels": {
+          "zh-Hant": "太陰",
+          "en": "Moon"
+        }
+      },
+      "tan_lang": {
+        "code": "tan_lang",
+        "labels": {
+          "zh-Hant": "貪狼",
+          "en": "Greedy Wolf"
+        }
+      },
+      "ju_men": {
+        "code": "ju_men",
+        "labels": {
+          "zh-Hant": "巨門",
+          "en": "Great Gate"
+        }
+      },
+      "tian_xiang": {
+        "code": "tian_xiang",
+        "labels": {
+          "zh-Hant": "天相",
+          "en": "Heavenly Minister"
+        }
+      },
+      "tian_liang": {
+        "code": "tian_liang",
+        "labels": {
+          "zh-Hant": "天梁",
+          "en": "Heavenly Roof"
+        }
+      },
+      "qi_sha": {
+        "code": "qi_sha",
+        "labels": {
+          "zh-Hant": "七殺",
+          "en": "Seven Killings"
+        }
+      },
+      "po_jun": {
+        "code": "po_jun",
+        "labels": {
+          "zh-Hant": "破軍",
+          "en": "Dissolution"
+        }
+      },
+      "zuo_fu": {
+        "code": "zuo_fu",
+        "labels": {
+          "zh-Hant": "左輔",
+          "en": "Left Assistant"
+        }
+      },
+      "you_bi": {
+        "code": "you_bi",
+        "labels": {
+          "zh-Hant": "右弼",
+          "en": "Right Supporter"
+        }
+      },
+      "wen_chang": {
+        "code": "wen_chang",
+        "labels": {
+          "zh-Hant": "文昌",
+          "en": "Literary Prosperity"
+        }
+      },
+      "wen_qu": {
+        "code": "wen_qu",
+        "labels": {
+          "zh-Hant": "文曲",
+          "en": "Literary Grace"
+        }
+      },
+      "tian_kui": {
+        "code": "tian_kui",
+        "labels": {
+          "zh-Hant": "天魁",
+          "en": "Heavenly Opening"
+        }
+      },
+      "tian_yue": {
+        "code": "tian_yue",
+        "labels": {
+          "zh-Hant": "天鉞",
+          "en": "Heavenly Halberd"
+        }
+      },
+      "lu_cun": {
+        "code": "lu_cun",
+        "labels": {
+          "zh-Hant": "祿存",
+          "en": "Prosperity Essence"
+        }
+      },
+      "tian_ma": {
+        "code": "tian_ma",
+        "labels": {
+          "zh-Hant": "天馬",
+          "en": "Heavenly Horse"
+        }
+      },
+      "di_kong": {
+        "code": "di_kong",
+        "labels": {
+          "zh-Hant": "地空",
+          "en": "Earthly Emptiness"
+        }
+      },
+      "di_jie": {
+        "code": "di_jie",
+        "labels": {
+          "zh-Hant": "地劫",
+          "en": "Earthly Robbery"
+        }
+      },
+      "huo_xing": {
+        "code": "huo_xing",
+        "labels": {
+          "zh-Hant": "火星",
+          "en": "Fire Star"
+        }
+      },
+      "ling_xing": {
+        "code": "ling_xing",
+        "labels": {
+          "zh-Hant": "鈴星",
+          "en": "Bell Star"
+        }
+      },
+      "qing_yang": {
+        "code": "qing_yang",
+        "labels": {
+          "zh-Hant": "擎羊",
+          "en": "Ram Blade"
+        }
+      },
+      "tuo_luo": {
+        "code": "tuo_luo",
+        "labels": {
+          "zh-Hant": "陀羅",
+          "en": "Spinning Rope"
+        }
+      },
+      "hong_luan": {
+        "code": "hong_luan",
+        "labels": {
+          "zh-Hant": "紅鸞",
+          "en": "Hong Luan"
+        }
+      },
+      "tian_xi": {
+        "code": "tian_xi",
+        "labels": {
+          "zh-Hant": "天喜",
+          "en": "Tian Xi"
+        }
+      },
+      "tian_yao": {
+        "code": "tian_yao",
+        "labels": {
+          "zh-Hant": "天姚",
+          "en": "Tian Yao"
+        }
+      },
+      "xian_chi": {
+        "code": "xian_chi",
+        "labels": {
+          "zh-Hant": "咸池",
+          "en": "Xian Chi"
+        }
+      },
+      "jie_shen": {
+        "code": "jie_shen",
+        "labels": {
+          "zh-Hant": "解神",
+          "en": "Jie Shen"
+        }
+      },
+      "san_tai": {
+        "code": "san_tai",
+        "labels": {
+          "zh-Hant": "三台",
+          "en": "San Tai"
+        }
+      },
+      "ba_zuo": {
+        "code": "ba_zuo",
+        "labels": {
+          "zh-Hant": "八座",
+          "en": "Ba Zuo"
+        }
+      },
+      "en_guang": {
+        "code": "en_guang",
+        "labels": {
+          "zh-Hant": "恩光",
+          "en": "En Guang"
+        }
+      },
+      "tian_gui": {
+        "code": "tian_gui",
+        "labels": {
+          "zh-Hant": "天貴",
+          "en": "Tian Gui"
+        }
+      },
+      "long_chi": {
+        "code": "long_chi",
+        "labels": {
+          "zh-Hant": "龍池",
+          "en": "Long Chi"
+        }
+      },
+      "feng_ge": {
+        "code": "feng_ge",
+        "labels": {
+          "zh-Hant": "鳳閣",
+          "en": "Feng Ge"
+        }
+      },
+      "tian_cai": {
+        "code": "tian_cai",
+        "labels": {
+          "zh-Hant": "天才",
+          "en": "Tian Cai"
+        }
+      },
+      "tian_shou": {
+        "code": "tian_shou",
+        "labels": {
+          "zh-Hant": "天壽",
+          "en": "Tian Shou"
+        }
+      },
+      "tai_fu": {
+        "code": "tai_fu",
+        "labels": {
+          "zh-Hant": "台輔",
+          "en": "Tai Fu"
+        }
+      },
+      "feng_gao": {
+        "code": "feng_gao",
+        "labels": {
+          "zh-Hant": "封誥",
+          "en": "Feng Gao"
+        }
+      },
+      "tian_wu": {
+        "code": "tian_wu",
+        "labels": {
+          "zh-Hant": "天巫",
+          "en": "Tian Wu"
+        }
+      },
+      "hua_gai": {
+        "code": "hua_gai",
+        "labels": {
+          "zh-Hant": "華蓋",
+          "en": "Hua Gai"
+        }
+      },
+      "tian_guan": {
+        "code": "tian_guan",
+        "labels": {
+          "zh-Hant": "天官",
+          "en": "Tian Guan"
+        }
+      },
+      "tian_fu_xing": {
+        "code": "tian_fu_xing",
+        "labels": {
+          "zh-Hant": "天福",
+          "en": "Tian Fu Xing"
+        }
+      },
+      "tian_chu": {
+        "code": "tian_chu",
+        "labels": {
+          "zh-Hant": "天廚",
+          "en": "Tian Chu"
+        }
+      },
+      "tian_yue_xing": {
+        "code": "tian_yue_xing",
+        "labels": {
+          "zh-Hant": "天月",
+          "en": "Tian Yue Xing"
+        }
+      },
+      "tian_de": {
+        "code": "tian_de",
+        "labels": {
+          "zh-Hant": "天德",
+          "en": "Tian De"
+        }
+      },
+      "yue_de": {
+        "code": "yue_de",
+        "labels": {
+          "zh-Hant": "月德",
+          "en": "Yue De"
+        }
+      },
+      "tian_kong": {
+        "code": "tian_kong",
+        "labels": {
+          "zh-Hant": "天空",
+          "en": "Tian Kong"
+        }
+      },
+      "xun_kong": {
+        "code": "xun_kong",
+        "labels": {
+          "zh-Hant": "旬空",
+          "en": "Xun Kong"
+        }
+      },
+      "gu_chen": {
+        "code": "gu_chen",
+        "labels": {
+          "zh-Hant": "孤辰",
+          "en": "Gu Chen"
+        }
+      },
+      "gua_su": {
+        "code": "gua_su",
+        "labels": {
+          "zh-Hant": "寡宿",
+          "en": "Gua Su"
+        }
+      },
+      "fei_lian": {
+        "code": "fei_lian",
+        "labels": {
+          "zh-Hant": "蜚廉",
+          "en": "Fei Lian"
+        }
+      },
+      "po_sui": {
+        "code": "po_sui",
+        "labels": {
+          "zh-Hant": "破碎",
+          "en": "Po Sui"
+        }
+      },
+      "tian_xing": {
+        "code": "tian_xing",
+        "labels": {
+          "zh-Hant": "天刑",
+          "en": "Tian Xing"
+        }
+      },
+      "yin_sha": {
+        "code": "yin_sha",
+        "labels": {
+          "zh-Hant": "陰煞",
+          "en": "Yin Sha"
+        }
+      },
+      "tian_ku": {
+        "code": "tian_ku",
+        "labels": {
+          "zh-Hant": "天哭",
+          "en": "Tian Ku"
+        }
+      },
+      "tian_xu": {
+        "code": "tian_xu",
+        "labels": {
+          "zh-Hant": "天虛",
+          "en": "Tian Xu"
+        }
+      },
+      "tian_shi": {
+        "code": "tian_shi",
+        "labels": {
+          "zh-Hant": "天使",
+          "en": "Tian Shi"
+        }
+      },
+      "tian_shang": {
+        "code": "tian_shang",
+        "labels": {
+          "zh-Hant": "天傷",
+          "en": "Tian Shang"
+        }
+      },
+      "nian_jie": {
+        "code": "nian_jie",
+        "labels": {
+          "zh-Hant": "年解",
+          "en": "Nian Jie"
+        }
+      },
+      "jie_lu": {
+        "code": "jie_lu",
+        "labels": {
+          "zh-Hant": "截路",
+          "en": "Jie Lu"
+        }
+      },
+      "kong_wang": {
+        "code": "kong_wang",
+        "labels": {
+          "zh-Hant": "空亡",
+          "en": "Kong Wang"
+        }
+      },
+      "chang_sheng": {
+        "code": "chang_sheng",
+        "labels": {
+          "zh-Hant": "長生",
+          "en": "Chang Sheng"
+        }
+      },
+      "mu_yu": {
+        "code": "mu_yu",
+        "labels": {
+          "zh-Hant": "沐浴",
+          "en": "Mu Yu"
+        }
+      },
+      "guan_dai": {
+        "code": "guan_dai",
+        "labels": {
+          "zh-Hant": "冠帶",
+          "en": "Guan Dai"
+        }
+      },
+      "lin_guan": {
+        "code": "lin_guan",
+        "labels": {
+          "zh-Hant": "臨官",
+          "en": "Lin Guan"
+        }
+      },
+      "di_wang": {
+        "code": "di_wang",
+        "labels": {
+          "zh-Hant": "帝旺",
+          "en": "Di Wang"
+        }
+      },
+      "shuai": {
+        "code": "shuai",
+        "labels": {
+          "zh-Hant": "衰",
+          "en": "Shuai"
+        }
+      },
+      "bing": {
+        "code": "bing",
+        "labels": {
+          "zh-Hant": "病",
+          "en": "Bing"
+        }
+      },
+      "si": {
+        "code": "si",
+        "labels": {
+          "zh-Hant": "死",
+          "en": "Si"
+        }
+      },
+      "mu": {
+        "code": "mu",
+        "labels": {
+          "zh-Hant": "墓",
+          "en": "Mu"
+        }
+      },
+      "jue": {
+        "code": "jue",
+        "labels": {
+          "zh-Hant": "絕",
+          "en": "Jue"
+        }
+      },
+      "tai": {
+        "code": "tai",
+        "labels": {
+          "zh-Hant": "胎",
+          "en": "Tai"
+        }
+      },
+      "yang": {
+        "code": "yang",
+        "labels": {
+          "zh-Hant": "養",
+          "en": "Yang"
+        }
+      },
+      "bo_shi": {
+        "code": "bo_shi",
+        "labels": {
+          "zh-Hant": "博士",
+          "en": "Bo Shi"
+        }
+      },
+      "li_shi": {
+        "code": "li_shi",
+        "labels": {
+          "zh-Hant": "力士",
+          "en": "Li Shi"
+        }
+      },
+      "qing_long": {
+        "code": "qing_long",
+        "labels": {
+          "zh-Hant": "青龍",
+          "en": "Qing Long"
+        }
+      },
+      "xiao_hao": {
+        "code": "xiao_hao",
+        "labels": {
+          "zh-Hant": "小耗",
+          "en": "Xiao Hao"
+        }
+      },
+      "jiang_jun": {
+        "code": "jiang_jun",
+        "labels": {
+          "zh-Hant": "將軍",
+          "en": "Jiang Jun"
+        }
+      },
+      "zou_shu": {
+        "code": "zou_shu",
+        "labels": {
+          "zh-Hant": "奏書",
+          "en": "Zou Shu"
+        }
+      },
+      "fei_lian_b": {
+        "code": "fei_lian_b",
+        "labels": {
+          "zh-Hant": "飛廉",
+          "en": "Fei Lian B"
+        }
+      },
+      "xi_shen": {
+        "code": "xi_shen",
+        "labels": {
+          "zh-Hant": "喜神",
+          "en": "Xi Shen"
+        }
+      },
+      "bing_fu": {
+        "code": "bing_fu",
+        "labels": {
+          "zh-Hant": "病符",
+          "en": "Bing Fu"
+        }
+      },
+      "da_hao": {
+        "code": "da_hao",
+        "labels": {
+          "zh-Hant": "大耗",
+          "en": "Da Hao"
+        }
+      },
+      "fu_bing": {
+        "code": "fu_bing",
+        "labels": {
+          "zh-Hant": "伏兵",
+          "en": "Fu Bing"
+        }
+      },
+      "guan_fu": {
+        "code": "guan_fu",
+        "labels": {
+          "zh-Hant": "官府",
+          "en": "Guan Fu"
+        }
+      },
+      "jiang_xing": {
+        "code": "jiang_xing",
+        "labels": {
+          "zh-Hant": "將星",
+          "en": "Jiang Xing"
+        }
+      },
+      "pan_an": {
+        "code": "pan_an",
+        "labels": {
+          "zh-Hant": "攀鞍",
+          "en": "Pan An"
+        }
+      },
+      "sui_yi": {
+        "code": "sui_yi",
+        "labels": {
+          "zh-Hant": "歲驛",
+          "en": "Sui Yi"
+        }
+      },
+      "xi_shen2": {
+        "code": "xi_shen2",
+        "labels": {
+          "zh-Hant": "息神",
+          "en": "Xi Shen2"
+        }
+      },
+      "hua_gai2": {
+        "code": "hua_gai2",
+        "labels": {
+          "zh-Hant": "華蓋",
+          "en": "Hua Gai2"
+        }
+      },
+      "jie_sha": {
+        "code": "jie_sha",
+        "labels": {
+          "zh-Hant": "劫煞",
+          "en": "Jie Sha"
+        }
+      },
+      "zhai_sha": {
+        "code": "zhai_sha",
+        "labels": {
+          "zh-Hant": "災煞",
+          "en": "Zhai Sha"
+        }
+      },
+      "tian_sha": {
+        "code": "tian_sha",
+        "labels": {
+          "zh-Hant": "天煞",
+          "en": "Tian Sha"
+        }
+      },
+      "zhi_bei": {
+        "code": "zhi_bei",
+        "labels": {
+          "zh-Hant": "指背",
+          "en": "Zhi Bei"
+        }
+      },
+      "xian_chi2": {
+        "code": "xian_chi2",
+        "labels": {
+          "zh-Hant": "咸池",
+          "en": "Xian Chi2"
+        }
+      },
+      "yue_sha": {
+        "code": "yue_sha",
+        "labels": {
+          "zh-Hant": "月煞",
+          "en": "Yue Sha"
+        }
+      },
+      "wang_shen": {
+        "code": "wang_shen",
+        "labels": {
+          "zh-Hant": "亡神",
+          "en": "Wang Shen"
+        }
+      },
+      "sui_jian": {
+        "code": "sui_jian",
+        "labels": {
+          "zh-Hant": "歲建",
+          "en": "Sui Jian"
+        }
+      },
+      "hui_qi": {
+        "code": "hui_qi",
+        "labels": {
+          "zh-Hant": "晦氣",
+          "en": "Hui Qi"
+        }
+      },
+      "sang_men": {
+        "code": "sang_men",
+        "labels": {
+          "zh-Hant": "喪門",
+          "en": "Sang Men"
+        }
+      },
+      "guan_suo": {
+        "code": "guan_suo",
+        "labels": {
+          "zh-Hant": "貫索",
+          "en": "Guan Suo"
+        }
+      },
+      "guan_fu2": {
+        "code": "guan_fu2",
+        "labels": {
+          "zh-Hant": "官符",
+          "en": "Guan Fu2"
+        }
+      },
+      "xiao_hao2": {
+        "code": "xiao_hao2",
+        "labels": {
+          "zh-Hant": "小耗",
+          "en": "Xiao Hao2"
+        }
+      },
+      "da_hao2": {
+        "code": "da_hao2",
+        "labels": {
+          "zh-Hant": "大耗",
+          "en": "Da Hao2"
+        }
+      },
+      "long_de": {
+        "code": "long_de",
+        "labels": {
+          "zh-Hant": "龍德",
+          "en": "Long De"
+        }
+      },
+      "bai_hu": {
+        "code": "bai_hu",
+        "labels": {
+          "zh-Hant": "白虎",
+          "en": "Bai Hu"
+        }
+      },
+      "tian_de2": {
+        "code": "tian_de2",
+        "labels": {
+          "zh-Hant": "天德",
+          "en": "Tian De2"
+        }
+      },
+      "diao_ke": {
+        "code": "diao_ke",
+        "labels": {
+          "zh-Hant": "弔客",
+          "en": "Diao Ke"
+        }
+      },
+      "bing_fu2": {
+        "code": "bing_fu2",
+        "labels": {
+          "zh-Hant": "病符",
+          "en": "Bing Fu2"
+        }
+      }
+    },
+    "brightness": {
+      "miao": {
+        "code": "miao",
+        "labels": {
+          "zh-Hant": "廟",
+          "en": "Brilliant"
+        }
+      },
+      "wang": {
+        "code": "wang",
+        "labels": {
+          "zh-Hant": "旺",
+          "en": "Prosperous"
+        }
+      },
+      "de": {
+        "code": "de",
+        "labels": {
+          "zh-Hant": "得",
+          "en": "Favorable"
+        }
+      },
+      "li": {
+        "code": "li",
+        "labels": {
+          "zh-Hant": "利",
+          "en": "Beneficial"
+        }
+      },
+      "ping": {
+        "code": "ping",
+        "labels": {
+          "zh-Hant": "平",
+          "en": "Neutral"
+        }
+      },
+      "bu": {
+        "code": "bu",
+        "labels": {
+          "zh-Hant": "不",
+          "en": "Weak"
+        }
+      },
+      "xian": {
+        "code": "xian",
+        "labels": {
+          "zh-Hant": "陷",
+          "en": "Fallen"
+        }
+      }
+    },
+    "transformations": {
+      "lu": {
+        "code": "lu",
+        "labels": {
+          "zh-Hant": "化祿",
+          "en": "Prosperity"
+        }
+      },
+      "quan": {
+        "code": "quan",
+        "labels": {
+          "zh-Hant": "化權",
+          "en": "Authority"
+        }
+      },
+      "ke": {
+        "code": "ke",
+        "labels": {
+          "zh-Hant": "化科",
+          "en": "Elegance"
+        }
+      },
+      "ji": {
+        "code": "ji",
+        "labels": {
+          "zh-Hant": "化忌",
+          "en": "Obstacle"
+        }
+      }
+    }
+  },
+  "chart": {
+    "profile": {
+      "yin_yang": "yang",
+      "five_element_bureau": {
+        "element": "water",
+        "number": 2
+      },
+      "life_master": "po_jun",
+      "body_master": "tian_xiang",
+      "ming_palace_position": 5,
+      "body_palace_position": 3
+    },
+    "palaces": [
+      {
+        "position": 1,
+        "palace": "wealth",
+        "stem": "ren",
+        "branch": "yin",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tian_tong",
+            "category": "major",
+            "brightness": "li",
+            "natal_transformation": "quan",
+            "transformation_source": "self"
+          },
+          {
+            "star": "tian_liang",
+            "category": "major",
+            "brightness": "miao"
+          },
+          {
+            "star": "tian_xi",
+            "category": "misc"
+          },
+          {
+            "star": "tian_guan",
+            "category": "misc"
+          },
+          {
+            "star": "tian_yue_xing",
+            "category": "misc"
+          },
+          {
+            "star": "jie_lu",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "bing",
+          "boshi12": "jiang_jun",
+          "jiangqian12": "wang_shen",
+          "suiqian12": "long_de"
+        }
+      },
+      {
+        "position": 2,
+        "palace": "children",
+        "stem": "gui",
+        "branch": "mao",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "wu_qu",
+            "category": "major",
+            "brightness": "li"
+          },
+          {
+            "star": "qi_sha",
+            "category": "major",
+            "brightness": "wang"
+          },
+          {
+            "star": "wen_qu",
+            "category": "minor",
+            "brightness": "wang"
+          },
+          {
+            "star": "feng_ge",
+            "category": "misc"
+          },
+          {
+            "star": "xun_kong",
+            "category": "misc"
+          },
+          {
+            "star": "kong_wang",
+            "category": "misc"
+          },
+          {
+            "star": "fei_lian",
+            "category": "misc"
+          },
+          {
+            "star": "nian_jie",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "shuai",
+          "boshi12": "xiao_hao",
+          "jiangqian12": "jiang_xing",
+          "suiqian12": "bai_hu"
+        }
+      },
+      {
+        "position": 3,
+        "palace": "spouse",
+        "stem": "jia",
+        "branch": "chen",
+        "is_body_palace": true,
+        "stars": [
+          {
+            "star": "tai_yang",
+            "category": "major",
+            "brightness": "wang"
+          },
+          {
+            "star": "tian_yao",
+            "category": "misc"
+          },
+          {
+            "star": "tian_de",
+            "category": "misc"
+          },
+          {
+            "star": "gua_su",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "di_wang",
+          "boshi12": "qing_long",
+          "jiangqian12": "pan_an",
+          "suiqian12": "tian_de2"
+        }
+      },
+      {
+        "position": 4,
+        "palace": "siblings",
+        "stem": "yi",
+        "branch": "si",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tian_ma",
+            "category": "minor"
+          },
+          {
+            "star": "tuo_luo",
+            "category": "minor",
+            "brightness": "xian"
+          },
+          {
+            "star": "tai_fu",
+            "category": "misc"
+          },
+          {
+            "star": "tian_chu",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "lin_guan",
+          "boshi12": "li_shi",
+          "jiangqian12": "sui_yi",
+          "suiqian12": "diao_ke"
+        }
+      },
+      {
+        "position": 5,
+        "palace": "life",
+        "stem": "bing",
+        "branch": "wu",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tian_ji",
+            "category": "major",
+            "brightness": "miao",
+            "natal_transformation": "ke",
+            "transformation_source": "self"
+          },
+          {
+            "star": "lu_cun",
+            "category": "minor"
+          },
+          {
+            "star": "san_tai",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "guan_dai",
+          "boshi12": "bo_shi",
+          "jiangqian12": "xi_shen2",
+          "suiqian12": "bing_fu2"
+        }
+      },
+      {
+        "position": 6,
+        "palace": "parents",
+        "stem": "ding",
+        "branch": "wei",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "zi_wei",
+            "category": "major",
+            "brightness": "miao"
+          },
+          {
+            "star": "po_jun",
+            "category": "major",
+            "brightness": "wang"
+          },
+          {
+            "star": "zuo_fu",
+            "category": "minor"
+          },
+          {
+            "star": "you_bi",
+            "category": "minor"
+          },
+          {
+            "star": "qing_yang",
+            "category": "minor",
+            "brightness": "miao"
+          },
+          {
+            "star": "hua_gai",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "mu_yu",
+          "boshi12": "guan_fu",
+          "jiangqian12": "hua_gai2",
+          "suiqian12": "sui_jian"
+        }
+      },
+      {
+        "position": 7,
+        "palace": "spirit",
+        "stem": "wu",
+        "branch": "shen",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "huo_xing",
+            "category": "minor",
+            "brightness": "xian"
+          },
+          {
+            "star": "hong_luan",
+            "category": "misc"
+          },
+          {
+            "star": "ba_zuo",
+            "category": "misc"
+          },
+          {
+            "star": "tian_kong",
+            "category": "misc"
+          },
+          {
+            "star": "gu_chen",
+            "category": "misc"
+          },
+          {
+            "star": "yin_sha",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "chang_sheng",
+          "boshi12": "fu_bing",
+          "jiangqian12": "jie_sha",
+          "suiqian12": "hui_qi"
+        }
+      },
+      {
+        "position": 8,
+        "palace": "property",
+        "stem": "ji",
+        "branch": "you",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tian_fu",
+            "category": "major",
+            "brightness": "wang"
+          },
+          {
+            "star": "tian_yue",
+            "category": "minor"
+          },
+          {
+            "star": "ling_xing",
+            "category": "minor",
+            "brightness": "de"
+          },
+          {
+            "star": "en_guang",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "yang",
+          "boshi12": "da_hao",
+          "jiangqian12": "zhai_sha",
+          "suiqian12": "sang_men"
+        }
+      },
+      {
+        "position": 9,
+        "palace": "career",
+        "stem": "geng",
+        "branch": "xu",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tai_yin",
+            "category": "major",
+            "brightness": "wang",
+            "natal_transformation": "lu",
+            "transformation_source": "self"
+          },
+          {
+            "star": "di_jie",
+            "category": "minor"
+          },
+          {
+            "star": "jie_shen",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "tai",
+          "boshi12": "bing_fu",
+          "jiangqian12": "tian_sha",
+          "suiqian12": "guan_suo"
+        }
+      },
+      {
+        "position": 10,
+        "palace": "friends",
+        "stem": "xin",
+        "branch": "hai",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "lian_zhen",
+            "category": "major",
+            "brightness": "xian"
+          },
+          {
+            "star": "tan_lang",
+            "category": "major",
+            "brightness": "xian"
+          },
+          {
+            "star": "wen_chang",
+            "category": "minor",
+            "brightness": "li"
+          },
+          {
+            "star": "tian_kui",
+            "category": "minor"
+          },
+          {
+            "star": "long_chi",
+            "category": "misc"
+          },
+          {
+            "star": "tian_shou",
+            "category": "misc"
+          },
+          {
+            "star": "tian_wu",
+            "category": "misc"
+          },
+          {
+            "star": "tian_fu_xing",
+            "category": "misc"
+          },
+          {
+            "star": "tian_ku",
+            "category": "misc"
+          },
+          {
+            "star": "tian_shang",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "jue",
+          "boshi12": "xi_shen",
+          "jiangqian12": "zhi_bei",
+          "suiqian12": "guan_fu2"
+        }
+      },
+      {
+        "position": 11,
+        "palace": "travel",
+        "stem": "ren",
+        "branch": "zi",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "ju_men",
+            "category": "major",
+            "brightness": "wang",
+            "natal_transformation": "ji",
+            "transformation_source": "self"
+          },
+          {
+            "star": "di_kong",
+            "category": "minor"
+          },
+          {
+            "star": "xian_chi",
+            "category": "misc"
+          },
+          {
+            "star": "yue_de",
+            "category": "misc"
+          },
+          {
+            "star": "tian_xing",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "mu",
+          "boshi12": "fei_lian_b",
+          "jiangqian12": "xian_chi2",
+          "suiqian12": "xiao_hao2"
+        }
+      },
+      {
+        "position": 12,
+        "palace": "health",
+        "stem": "gui",
+        "branch": "chou",
+        "is_body_palace": false,
+        "stars": [
+          {
+            "star": "tian_xiang",
+            "category": "major",
+            "brightness": "miao"
+          },
+          {
+            "star": "tian_gui",
+            "category": "misc"
+          },
+          {
+            "star": "tian_cai",
+            "category": "misc"
+          },
+          {
+            "star": "feng_gao",
+            "category": "misc"
+          },
+          {
+            "star": "po_sui",
+            "category": "misc"
+          },
+          {
+            "star": "tian_xu",
+            "category": "misc"
+          },
+          {
+            "star": "tian_shi",
+            "category": "misc"
+          }
+        ],
+        "markers": {
+          "changsheng12": "si",
+          "boshi12": "zou_shu",
+          "jiangqian12": "yue_sha",
+          "suiqian12": "da_hao2"
+        }
+      }
+    ]
+  },
+  "overlays": {
+    "decade_limits": [
+      {
+        "age_range": [
+          42,
+          51
+        ],
+        "palace_position": 1,
+        "stem": "ren",
+        "transformations": [
+          {
+            "star": "tian_liang",
+            "transformation": "lu"
+          },
+          {
+            "star": "zi_wei",
+            "transformation": "quan"
+          },
+          {
+            "star": "zuo_fu",
+            "transformation": "ke"
+          },
+          {
+            "star": "wu_qu",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          32,
+          41
+        ],
+        "palace_position": 2,
+        "stem": "gui",
+        "transformations": [
+          {
+            "star": "po_jun",
+            "transformation": "lu"
+          },
+          {
+            "star": "ju_men",
+            "transformation": "quan"
+          },
+          {
+            "star": "tai_yin",
+            "transformation": "ke"
+          },
+          {
+            "star": "tan_lang",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          22,
+          31
+        ],
+        "palace_position": 3,
+        "stem": "jia",
+        "transformations": [
+          {
+            "star": "lian_zhen",
+            "transformation": "lu"
+          },
+          {
+            "star": "po_jun",
+            "transformation": "quan"
+          },
+          {
+            "star": "wu_qu",
+            "transformation": "ke"
+          },
+          {
+            "star": "tai_yang",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          12,
+          21
+        ],
+        "palace_position": 4,
+        "stem": "yi",
+        "transformations": [
+          {
+            "star": "tian_ji",
+            "transformation": "lu"
+          },
+          {
+            "star": "tian_liang",
+            "transformation": "quan"
+          },
+          {
+            "star": "zi_wei",
+            "transformation": "ke"
+          },
+          {
+            "star": "tai_yin",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          2,
+          11
+        ],
+        "palace_position": 5,
+        "stem": "bing",
+        "transformations": [
+          {
+            "star": "tian_tong",
+            "transformation": "lu"
+          },
+          {
+            "star": "tian_ji",
+            "transformation": "quan"
+          },
+          {
+            "star": "wen_chang",
+            "transformation": "ke"
+          },
+          {
+            "star": "lian_zhen",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          112,
+          121
+        ],
+        "palace_position": 6,
+        "stem": "ding",
+        "transformations": [
+          {
+            "star": "tai_yin",
+            "transformation": "lu"
+          },
+          {
+            "star": "tian_tong",
+            "transformation": "quan"
+          },
+          {
+            "star": "tian_ji",
+            "transformation": "ke"
+          },
+          {
+            "star": "ju_men",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          102,
+          111
+        ],
+        "palace_position": 7,
+        "stem": "wu",
+        "transformations": [
+          {
+            "star": "tan_lang",
+            "transformation": "lu"
+          },
+          {
+            "star": "tai_yin",
+            "transformation": "quan"
+          },
+          {
+            "star": "you_bi",
+            "transformation": "ke"
+          },
+          {
+            "star": "tian_ji",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          92,
+          101
+        ],
+        "palace_position": 8,
+        "stem": "ji",
+        "transformations": [
+          {
+            "star": "wu_qu",
+            "transformation": "lu"
+          },
+          {
+            "star": "tan_lang",
+            "transformation": "quan"
+          },
+          {
+            "star": "tian_liang",
+            "transformation": "ke"
+          },
+          {
+            "star": "wen_qu",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          82,
+          91
+        ],
+        "palace_position": 9,
+        "stem": "geng",
+        "transformations": [
+          {
+            "star": "tai_yang",
+            "transformation": "lu"
+          },
+          {
+            "star": "wu_qu",
+            "transformation": "quan"
+          },
+          {
+            "star": "tai_yin",
+            "transformation": "ke"
+          },
+          {
+            "star": "tian_tong",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          72,
+          81
+        ],
+        "palace_position": 10,
+        "stem": "xin",
+        "transformations": [
+          {
+            "star": "ju_men",
+            "transformation": "lu"
+          },
+          {
+            "star": "tai_yang",
+            "transformation": "quan"
+          },
+          {
+            "star": "wen_qu",
+            "transformation": "ke"
+          },
+          {
+            "star": "wen_chang",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          62,
+          71
+        ],
+        "palace_position": 11,
+        "stem": "ren",
+        "transformations": [
+          {
+            "star": "tian_liang",
+            "transformation": "lu"
+          },
+          {
+            "star": "zi_wei",
+            "transformation": "quan"
+          },
+          {
+            "star": "zuo_fu",
+            "transformation": "ke"
+          },
+          {
+            "star": "wu_qu",
+            "transformation": "ji"
+          }
+        ]
+      },
+      {
+        "age_range": [
+          52,
+          61
+        ],
+        "palace_position": 12,
+        "stem": "gui",
+        "transformations": [
+          {
+            "star": "po_jun",
+            "transformation": "lu"
+          },
+          {
+            "star": "ju_men",
+            "transformation": "quan"
+          },
+          {
+            "star": "tai_yin",
+            "transformation": "ke"
+          },
+          {
+            "star": "tan_lang",
+            "transformation": "ji"
+          }
+        ]
+      }
+    ]
+  }
+}

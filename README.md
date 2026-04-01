@@ -1,5 +1,7 @@
 # purplestar — 紫微斗數 Natal Chart Generator
 
+[繁體中文說明請見 README.zh-Hant.md](README.zh-Hant.md)
+
 A Python package and command-line tool for generating 紫微斗數 (Purple Star Astrology, also known as "Zi Wei Dou Shu") natal charts. All calculation logic is derived from the algorithms used in [iztro](https://github.com/SylarLong/iztro).
 
 ## Features
@@ -168,11 +170,11 @@ Returns a `dict` that can be passed to `to_json_schema()` or `to_plaintext()`.
 
 ### `to_json_schema(chart, indent=2)`
 
-Serialises a chart dict to a JSON string conforming to the Zi Wei Dou Shu Interchange Schema v2. The schema is fully described in `guides/purplestar_chart_schema.md`.
+Serialises a chart dict to a JSON string conforming to the Zi Wei Dou Shu Interchange Schema v2. The schema is fully described in the [*Purple Star Astrology Interchange Schema v2*](guidelines/purplestar_chart_schema.md).
 
 ### `to_plaintext(chart)`
 
-Serialises a chart dict to the structured plain-text format described in `guides/purplestar_chart_plaintext_format.md`. The output is suitable for sharing via WhatsApp or pasting into an LLM conversation.
+Serialises a chart dict to the structured plain-text format described in the [*Plain-Text Format for 紫微斗數 Natal Charts*](guidelines/purplestar_chart_plaintext_format.md) guide. The output is suitable for sharing via chat programs or pasting into an LLM conversation.
 
 ---
 
@@ -180,10 +182,10 @@ Serialises a chart dict to the structured plain-text format described in `guides
 
 ### Plain Text
 
-The plain-text format consists of three sections:
+The plain-text format consists of three sections (see the [*Plain-Text Format for 紫微斗數 Natal Charts*](guidelines/purplestar_chart_plaintext_format.md) guide for the full specification):
 
 1. **【命盤資料】** — chart metadata: gender, solar and lunar dates, birth hour, palace positions, five-elements bureau, life and body governors
-2. **【十二宮】** — twelve palaces listed in the conventional order (命宮 → 兄弟宮 → 夫妻宮 → …), each showing major stars with brightness grades, auxiliary stars, four transformations (四化), malefic stars, and decadal luck age range
+2. **【十二宮】** — twelve palaces listed in the conventional interpretation order (命宮 → 父母宮 → 福德宮 → 田宅宮 → 事業宮 → 交友宮 → 遷移宮 → 疾厄宮 → 財帛宮 → 子女宮 → 夫妻宮 → 兄弟宮), each showing major stars with brightness grades, auxiliary stars, four transformations (四化), malefic stars, and decadal luck age range
 3. **【備註】** — notes on the generation method and any caveats
 
 Example snippet:
@@ -199,7 +201,7 @@ Example snippet:
 
 ### JSON (Schema v2)
 
-The JSON output conforms to the Zi Wei Dou Shu Interchange Schema v2:
+The JSON output conforms to the Zi Wei Dou Shu Interchange Schema v2 (see the [*Purple Star Astrology Interchange Schema v2*](guidelines/purplestar_chart_schema.md) for the full specification):
 
 - **Stable canonical codes** (`zi_wei`, `life`, `miao`, `lu`) rather than display labels
 - **Bilingual catalog** with Traditional Chinese and English labels for every code
@@ -257,9 +259,9 @@ purplestar_chart/
 ├── tests/
 │   ├── test_charts.py        # Parametrised chart generation tests
 │   └── output/               # Generated chart files (JSON + text)
-├── guides/
-│   ├── purplestar_chart_schema.md           # JSON schema specification
-│   └── purplestar_chart_plaintext_format.md # Plain-text format guide
+├── guidelines/
+│   ├── purplestar_chart_schema.md           # Purple Star Astrology Interchange Schema v2
+│   └── purplestar_chart_plaintext_format.md # Plain-Text Format for 紫微斗數 Natal Charts
 ├── iztro/                    # Reference TypeScript implementation
 ├── pyproject.toml
 └── README.md

@@ -31,10 +31,5 @@ Thumbs.db
 # VS Code
 .vscode/
 
-# Internal
-guides/
-reports/
-tests/
-
 # Reference
 iztro/
