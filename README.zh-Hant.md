@@ -1,6 +1,6 @@
 # purplestar — 紫微斗數命盤排算工具
 
-[English README available at README.md](README.md)
+[English README available at README.md](https://github.com/jason-chao/purplestar/blob/main/README.md)
 
 本套件為 Python 命令列工具，用於排算紫微斗數本命盤。計算邏輯源自 [iztro](https://github.com/SylarLong/iztro) 的演算法。
 
@@ -166,11 +166,11 @@ print(json_str)
 
 ### `to_json_schema(chart, indent=2)`
 
-將命盤 dict 序列化為符合紫微斗數交換格式 v2 的 JSON 字串。格式規格詳見 [*Purple Star Astrology Interchange Schema v2*](guidelines/purplestar_chart_schema.md)。
+將命盤 dict 序列化為符合紫微斗數交換格式 v2 的 JSON 字串。格式規格詳見 [*Purple Star Astrology Interchange Schema v2*](https://github.com/jason-chao/purplestar/blob/main/guidelines/purplestar_chart_schema.md)。
 
 ### `to_plaintext(chart)`
 
-將命盤 dict 序列化為結構化純文字格式。格式規格詳見 [*Plain-Text Format for 紫微斗數 Natal Charts*](guidelines/purplestar_chart_plaintext_format.md)。輸出適合直接貼入即時通訊軟件或 LLM 對話視窗。
+將命盤 dict 序列化為結構化純文字格式。格式規格詳見 [*Plain-Text Format for 紫微斗數 Natal Charts*](https://github.com/jason-chao/purplestar/blob/main/guidelines/purplestar_chart_plaintext_format.md)。輸出適合直接貼入即時通訊軟件或 LLM 對話視窗。
 
 ---
 
@@ -178,7 +178,7 @@ print(json_str)
 
 ### 純文字
 
-純文字格式分三大區塊（完整規格見 [*Plain-Text Format for 紫微斗數 Natal Charts*](guidelines/purplestar_chart_plaintext_format.md)）：
+純文字格式分三大區塊（完整規格見 [*Plain-Text Format for 紫微斗數 Natal Charts*](https://github.com/jason-chao/purplestar/blob/main/guidelines/purplestar_chart_plaintext_format.md)）：
 
 1. **【命盤資料】** — 元資料：性別、陽曆及陰曆生日、時辰、宮位、五行局、命主、身主
 2. **【十二宮】** — 依傳統論命順序列出十二宮（命宮 → 父母宮 → 福德宮 → 田宅宮 → 事業宮 → 交友宮 → 遷移宮 → 疾厄宮 → 財帛宮 → 子女宮 → 夫妻宮 → 兄弟宮），每宮列出主星（含廟旺）、輔星、四化、煞星及大限年齡
@@ -197,7 +197,7 @@ print(json_str)
 
 ### JSON（交換格式 v2）
 
-JSON 輸出符合紫微斗數交換格式 v2（完整規格見 [*Purple Star Astrology Interchange Schema v2*](guidelines/purplestar_chart_schema.md)）：
+JSON 輸出符合紫微斗數交換格式 v2（完整規格見 [*Purple Star Astrology Interchange Schema v2*](https://github.com/jason-chao/purplestar/blob/main/guidelines/purplestar_chart_schema.md)）：
 
 - **穩定的代碼系統**（`zi_wei`、`life`、`miao`、`lu`）而非顯示名稱
 - **雙語目錄**：每個代碼均附繁體中文及英文標籤

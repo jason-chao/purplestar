@@ -1,5 +1,5 @@
 """
-Command-line interface for the purplestar 紫微斗數 chart generator.
+Command-line interface for the purplestar Purple Star Astrology chart generator.
 
 Usage examples:
   purplestar generate --gender male --date 1990-03-15 --time 04:00 --timezone Asia/Taipei
@@ -8,18 +8,19 @@ Usage examples:
 import sys
 import json
 import click
+from importlib.metadata import version as pkg_version
 from purplestar.core.chart import generate_chart
 from purplestar.output.json_schema import to_json_schema
 from purplestar.output.plaintext import to_plaintext
 
 
 @click.group()
-@click.version_option(version='1.0.0', prog_name='purplestar')
+@click.version_option(version=pkg_version('purplestar'), prog_name='purplestar')
 def cli():
-    """紫微斗數 (Zi Wei Dou Shu) natal chart generator.
+    """Purple Star Astrology natal chart generator.
 
-    Generates 紫微斗數 natal charts entirely offline.
-    Supports JSON (schema v2) and plain-text output formats.
+    Generates Purple Star Astrology natal charts entirely offline.
+    Supports JSON and plain-text output formats.
     """
     pass
 
@@ -40,11 +41,11 @@ def cli():
               help='Name or identifier for the native. Optional.')
 @click.option('--format', '-f', 'fmt', default='text',
               type=click.Choice(['text', 'json']),
-              help='Output format: text (plain-text) or json (schema v2). Default: text.')
+              help='Output format: text (plain-text) or json. Default: text.')
 @click.option('--output', '-o', default=None, metavar='FILE',
               help='Output file path. Prints to stdout if omitted.')
 def generate(gender, date, time, timezone, place, name, fmt, output):
-    """Generate a 紫微斗數 natal chart.
+    """Generate a Purple Star Astrology natal chart.
 
     Produces a natal chart in either plain-text or JSON format.
     The calculation is performed entirely offline using the sxtwl
@@ -91,7 +92,7 @@ def show(json_file):
     try:
         with open(json_file, encoding='utf-8') as f:
             data = json.load(f)
-        # Convert schema v2 back to internal format for display
+        # Convert schema back to internal format for display
         # For simplicity, just pretty-print key fields
         click.echo(f"Subject: {data.get('subject', {}).get('id', 'unknown')}")
         click.echo(f"Schema version: {data.get('schema_version', '')}")
