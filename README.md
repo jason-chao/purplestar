@@ -1,5 +1,7 @@
 # purplestar — Purple Star Astrology (紫微斗數) Natal Chart Generator
 
+[![PyPI](https://img.shields.io/pypi/v/purplestar)](https://pypi.org/project/purplestar/)
+
 [繁體中文說明請見 README.zh-Hant.md](https://github.com/jason-chao/purplestar/blob/main/README.zh-Hant.md)
 
 A Python package and command-line tool for generating Purple Star Astrology (紫微斗數 or "Zi Wei Dou Shu") natal charts. All calculation logic is derived from the algorithms used in [iztro](https://github.com/SylarLong/iztro).

@@ -1,5 +1,7 @@
 # purplestar — 紫微斗數命盤排算工具
 
+[![PyPI](https://img.shields.io/pypi/v/purplestar)](https://pypi.org/project/purplestar/)
+
 [English README available at README.md](https://github.com/jason-chao/purplestar/blob/main/README.md)
 
 本套件為 Python 命令列工具，用於排算紫微斗數本命盤。計算邏輯源自 [iztro](https://github.com/SylarLong/iztro) 的演算法。
