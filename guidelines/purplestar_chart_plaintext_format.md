@@ -27,12 +27,11 @@ A **palace-by-palace list** — each palace clearly labelled with its stars, Fou
 
 ### 2.1 Overall Structure
 
-A chart is divided into three sections, separated by blank lines:
+A chart is divided into two sections, separated by blank lines:
 
 ```
 【命盤資料】  ← Section 1: Metadata
 【十二宮】    ← Section 2: The twelve palaces
-【備註】      ← Section 3: Optional notes
 ```
 
 ### 2.2 Section 1 — 命盤資料 (Chart Metadata)
@@ -86,15 +85,6 @@ Each palace is a block with the following structure:
 - **Four Transformations (四化):** Mark each transformation next to the star that carries it, using the format `星名-化祿`, `星名-化權`, `星名-化科`, `星名-化忌`. If a star already listed as a 主星 carries a transformation, note it here rather than duplicating the star.
 - **Malefic stars (煞星):** 擎羊, 陀羅, 火星, 鈴星, 地空, 地劫, and similar.
 - **If a category is empty**, write `（無）` so that both humans and LLMs can confirm the field was not accidentally omitted.
-
-### 2.4 Section 3 — 備註 (Notes)
-
-An optional free-text section for:
-
-- The source software or manual calculation method used.
-- Any school-specific stars or rules applied.
-- Specific questions the chart owner wants answered.
-- Any ambiguity about the birth time (e.g. "birth time is approximate, possibly 卯時 or 辰時").
 
 ---
 
@@ -235,12 +225,6 @@ Below is a complete fictional chart demonstrating the format. All data is invent
 煞星：（無）
 大限：113–122
 
-------------------------------------
-【備註】
-------------------------------------
-- 此為虛構範例，僅供格式示範。
-- 命盤以三合派排盤，未加飛星四化。
-- 出生時間為醫院紀錄，準確度高。
 ====================================
 ```
 
@@ -289,11 +273,7 @@ Follow the same palace-by-palace structure so the reader (human or LLM) can cros
 
 ### 6.3 Minimal Version for Quick Queries
 
-If you only need to discuss one or two palaces (e.g. asking an LLM about career), you may send just the metadata section plus the relevant palaces, noting that the chart is partial:
-
-```
-【備註】此為部分命盤，僅列出命宮及事業宮供討論。
-```
+If you only need to discuss one or two palaces (e.g. asking an LLM about career), you may send just the metadata section plus the relevant palaces, noting in your prompt that the chart is partial.
 
 ---
 
