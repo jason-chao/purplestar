@@ -110,10 +110,10 @@ def test_generate_chart(individual_id, name, gender, date, time, timezone, place
     body_palaces = [p for p in palaces if p['is_body_palace']]
     assert len(body_palaces) == 1
 
-    # Unknown birth time: notes must mention it
+    # Unknown birth time: 時辰 line should reflect it
     if time is None:
         text = to_plaintext(chart)
-        assert '時間不詳' in text
+        assert '時辰：不詳' in text
 
     # Output files exist
     stem = _stem(individual_id, name)

@@ -5,7 +5,6 @@ Produces the structured plain-text format described in
 guides/purplestar_chart_plaintext_format.md, suitable for
 WhatsApp sharing and LLM input.
 """
-from importlib.metadata import version as pkg_version
 from purplestar.data.constants import (
     PALACE_ZH, EARTHLY_BRANCH_ZH, HEAVENLY_STEM_ZH,
     STAR_ZH, BRIGHTNESS_ZH, TRANSFORM_ZH,
@@ -166,15 +165,6 @@ def to_plaintext(chart: dict) -> str:
 
         lines.append('')
 
-    # Section 3: 備註
-    lines.append('-' * 36)
-    lines.append('【備註】')
-    lines.append('-' * 36)
-    notes = []
-    notes.append(f'- 本命盤由 purplestar {pkg_version("purplestar")} 自動生成，三合派排盤。')
-    if not bd.get('time_known', True):
-        notes.append('- 出生時間不詳，預設以子時（00:00–01:00）排盤，結果僅供參考。')
-    lines.extend(notes)
     lines.append('=' * 36)
 
     return '\n'.join(lines)
