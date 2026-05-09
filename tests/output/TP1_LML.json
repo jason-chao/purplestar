@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:36Z"
   },
   "subject": {
     "id": "Lin Mei-ling"
@@ -19,7 +19,21 @@
     "gender": "female",
     "timezone": "Asia/Taipei",
     "place": {
-      "name": "Taipei, Taiwan"
+      "name": "Taipei, Taiwan",
+      "longitude": 121.52639,
+      "latitude": 25.05306,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Taipei",
+        "country": "TW",
+        "population": 7871900,
+        "latitude": 25.05306,
+        "longitude": 121.52639,
+        "timezone": "Asia/Taipei"
+      }
+    },
+    "solar_time_correction": {
+      "applied": false
     }
   },
   "system": {

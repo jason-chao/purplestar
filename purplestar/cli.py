@@ -34,9 +34,18 @@ def cli():
               help='Time of birth in 24-hour format (e.g. 14:30). Omit if unknown.')
 @click.option('--timezone', '-z', default='UTC', metavar='TZ',
               help='Timezone of the birth location (e.g. Asia/Taipei, Europe/London). '
-                   'Used for display only; the calculation uses the local solar date as given.')
+                   'Used together with longitude for true-solar-time correction. '
+                   'Auto-filled from --place if a city is resolved.')
 @click.option('--place', '-p', default=None, metavar='PLACE',
-              help='Place of birth (e.g. "London, England"). Optional.')
+              help='Place of birth (e.g. "Taipei, TW" or "London"). When given '
+                   'without --longitude, looked up via geonamescache to fill in '
+                   'longitude/latitude/timezone for true-solar correction.')
+@click.option('--longitude', '--lon', 'longitude', default=None, type=float, metavar='DEG',
+              help='Birth longitude in decimal degrees (east positive). '
+                   'When given with --time and --timezone, the clock time is '
+                   'corrected to 真太陽時 before casting the chart.')
+@click.option('--latitude', '--lat', 'latitude', default=None, type=float, metavar='DEG',
+              help='Birth latitude in decimal degrees. Recorded as metadata only.')
 @click.option('--name', '-n', default=None, metavar='ID',
               help='Name or identifier for the native. Optional.')
 @click.option('--format', '-f', 'fmt', default='text',
@@ -44,7 +53,7 @@ def cli():
               help='Output format: text (plain-text) or json. Default: text.')
 @click.option('--output', '-o', default=None, metavar='FILE',
               help='Output file path. Prints to stdout if omitted.')
-def generate(gender, date, time, timezone, place, name, fmt, output):
+def generate(gender, date, time, timezone, place, longitude, latitude, name, fmt, output):
     """Generate a Purple Star Astrology natal chart.
 
     Produces a natal chart in either plain-text or JSON format.
@@ -64,6 +73,8 @@ def generate(gender, date, time, timezone, place, name, fmt, output):
             timezone=timezone,
             place=place,
             name=name,
+            longitude=longitude,
+            latitude=latitude,
         )
     except Exception as exc:
         click.echo(f'Error generating chart: {exc}', err=True)

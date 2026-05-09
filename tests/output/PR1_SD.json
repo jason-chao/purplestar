@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "Sophie Dubois"
@@ -19,7 +19,26 @@
     "gender": "female",
     "timezone": "Europe/Paris",
     "place": {
-      "name": "Paris, France"
+      "name": "Paris, France",
+      "longitude": 2.3488,
+      "latitude": 48.85341,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Paris",
+        "country": "FR",
+        "population": 2138551,
+        "latitude": 48.85341,
+        "longitude": 2.3488,
+        "timezone": "Europe/Paris"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": -38.21,
+      "original_time": "08:30",
+      "corrected_time": "07:51",
+      "longitude": 2.3488,
+      "tz_meridian_deg": 15.0
     }
   },
   "system": {

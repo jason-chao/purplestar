@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "Michael Reeves"
@@ -19,7 +19,26 @@
     "gender": "male",
     "timezone": "America/New_York",
     "place": {
-      "name": "New York, United States"
+      "name": "New York, United States",
+      "longitude": -74.00597,
+      "latitude": 40.71427,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "New York City",
+        "country": "US",
+        "population": 8804190,
+        "latitude": 40.71427,
+        "longitude": -74.00597,
+        "timezone": "America/New_York"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": -52.43,
+      "original_time": "22:45",
+      "corrected_time": "21:52",
+      "longitude": -74.00597,
+      "tz_meridian_deg": -60.0
     }
   },
   "system": {

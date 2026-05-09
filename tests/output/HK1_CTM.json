@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:36Z"
   },
   "subject": {
     "id": "Chan Tai-man"
@@ -19,7 +19,26 @@
     "gender": "male",
     "timezone": "Asia/Hong_Kong",
     "place": {
-      "name": "Hong Kong"
+      "name": "Hong Kong",
+      "longitude": 114.17469,
+      "latitude": 22.27832,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Hong Kong",
+        "country": "HK",
+        "population": 7396076,
+        "latitude": 22.27832,
+        "longitude": 114.17469,
+        "timezone": "Asia/Hong_Kong"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": -23.29,
+      "original_time": "06:30",
+      "corrected_time": "06:06",
+      "longitude": 114.17469,
+      "tz_meridian_deg": 120.0
     }
   },
   "system": {

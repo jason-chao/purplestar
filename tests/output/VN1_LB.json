@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "Lucas Bergmann"
@@ -19,7 +19,26 @@
     "gender": "male",
     "timezone": "America/Vancouver",
     "place": {
-      "name": "Vancouver, Canada"
+      "name": "Vancouver, Canada",
+      "longitude": -123.11934,
+      "latitude": 49.24966,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Vancouver",
+        "country": "CA",
+        "population": 662248,
+        "latitude": 49.24966,
+        "longitude": -123.11934,
+        "timezone": "America/Vancouver"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": -25.65,
+      "original_time": "16:45",
+      "corrected_time": "16:19",
+      "longitude": -123.11934,
+      "tz_meridian_deg": -120.0
     }
   },
   "system": {

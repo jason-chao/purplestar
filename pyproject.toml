@@ -24,7 +24,11 @@ dependencies = [
     "sxtwl>=2.0.7",
     "click>=8.0",
     "pytz>=2023.3",
+    "geonamescache>=2.0",
 ]
+
+[project.optional-dependencies]
+geo-tz = ["timezonefinder>=6.0"]
 
 [project.scripts]
 purplestar = "purplestar.cli:cli"

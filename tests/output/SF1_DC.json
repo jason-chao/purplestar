@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "David Chen"
@@ -19,7 +19,21 @@
     "gender": "male",
     "timezone": "America/Los_Angeles",
     "place": {
-      "name": "San Francisco, United States"
+      "name": "San Francisco, United States",
+      "longitude": -122.41942,
+      "latitude": 37.77493,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "San Francisco",
+        "country": "US",
+        "population": 827526,
+        "latitude": 37.77493,
+        "longitude": -122.41942,
+        "timezone": "America/Los_Angeles"
+      }
+    },
+    "solar_time_correction": {
+      "applied": false
     }
   },
   "system": {

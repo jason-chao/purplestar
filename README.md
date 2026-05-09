@@ -58,11 +58,17 @@ purplestar generate [OPTIONS]
 | Option | Default | Description |
 |---|---|---|
 | `-t`, `--time` | unknown | Time of birth in 24-hour format, `HH:MM`. Omit if unknown. |
-| `-z`, `--timezone` | `UTC` | IANA timezone of the birth location (e.g. `Asia/Taipei`). Used for metadata only. |
-| `-p`, `--place` | — | Place of birth, free text (e.g. `London, England`). |
+| `-z`, `--timezone` | `UTC` | IANA timezone of the birth location (e.g. `Asia/Taipei`). Used together with longitude for true-solar-time correction. Auto-filled from `--place` when a city is resolved. |
+| `-p`, `--place` | — | Place of birth (e.g. `"Taipei, TW"` or `"London"`). When given without `--longitude`, it is looked up via [`geonamescache`](https://pypi.org/project/geonamescache/) to fill in longitude / latitude / timezone for true-solar correction. Append a 2-letter ISO country code to disambiguate (e.g. `"London, CA"` for London, Ontario). |
+| `--longitude`, `--lon` | — | Birth longitude in decimal degrees (east positive). When supplied with `--time` and `--timezone`, the clock time is corrected to 真太陽時 (true solar time) before the chart is cast. |
+| `--latitude`, `--lat` | — | Birth latitude in decimal degrees. Recorded as metadata only. |
 | `-n`, `--name` | — | Name or identifier for the native. |
 | `-f`, `--format` | `text` | Output format: `text` or `json`. |
 | `-o`, `--output` | stdout | Output file path. Prints to stdout if omitted. |
+
+#### True solar time (真太陽時)
+
+By default, the package treats the supplied clock time as the casting time directly. If you provide `--longitude` (or a `--place` that resolves), the package converts civil clock time to true solar time using the standard `4 min/° × (lon − tz_meridian) + equation_of_time` formula before computing the 時辰. The correction can shift a chart across a 時辰 boundary or even across midnight; the resulting offset and original/corrected times are surfaced in both the plain-text and JSON outputs under `solar_time_correction`. Pass standard civil time (DST handling is out of scope).
 
 #### Examples
 
@@ -153,7 +159,7 @@ json_str = to_json_schema(chart)
 print(json_str)
 ```
 
-### `generate_chart(gender, solar_date, time, timezone, place, name)`
+### `generate_chart(gender, solar_date, time, timezone, place, name, longitude, latitude)`
 
 | Parameter | Type | Description |
 |---|---|---|
@@ -161,8 +167,10 @@ print(json_str)
 | `solar_date` | `str` | `'YYYY-MM-DD'` in the solar (Gregorian) calendar |
 | `time` | `str \| None` | `'HH:MM'` in 24-hour format, or `None` if unknown |
 | `timezone` | `str \| None` | IANA timezone string, or `None` |
-| `place` | `str \| None` | Free-text place name, or `None` |
+| `place` | `str \| None` | Place name (e.g. `"Taipei, TW"`); resolved via geonamescache when `longitude` is not supplied |
 | `name` | `str \| None` | Identifier for the native, or `None` |
+| `longitude` | `float \| None` | Birth longitude (decimal degrees, east positive). Triggers true-solar correction together with `time` and `timezone`. |
+| `latitude` | `float \| None` | Birth latitude (decimal degrees). Metadata only. |
 
 Returns a `dict` that can be passed to `to_json_schema()` or `to_plaintext()`.
 
@@ -267,6 +275,12 @@ purplestar_chart/
 ```
 
 ---
+
+## Acknowledgements
+
+- Solar–lunar conversion uses [`sxtwl`](https://pypi.org/project/sxtwl/) (壽星萬年曆).
+- Place-of-birth lookup uses [`geonamescache`](https://pypi.org/project/geonamescache/) (MIT), which bundles a snapshot of [GeoNames](https://www.geonames.org/) data.
+- True-solar-time math is shared with the sister project `purplestar_timing`.
 
 ## License
 

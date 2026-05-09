@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "Yuki Tanaka"
@@ -19,7 +19,21 @@
     "gender": "female",
     "timezone": "Asia/Tokyo",
     "place": {
-      "name": "Tokyo, Japan"
+      "name": "Tokyo, Japan",
+      "longitude": 139.69171,
+      "latitude": 35.6895,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Tokyo",
+        "country": "JP",
+        "population": 9733276,
+        "latitude": 35.6895,
+        "longitude": 139.69171,
+        "timezone": "Asia/Tokyo"
+      }
+    },
+    "solar_time_correction": {
+      "applied": false
     }
   },
   "system": {

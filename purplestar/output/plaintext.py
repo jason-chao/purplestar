@@ -53,6 +53,21 @@ def to_plaintext(chart: dict) -> str:
     else:
         lines.append('時辰：不詳')
 
+    stc = bd.get('solar_time_correction') or {}
+    if stc.get('applied'):
+        sign = '+' if stc['offset_minutes'] >= 0 else '−'
+        lines.append(
+            f'真太陽時校正：{sign}{abs(stc["offset_minutes"]):.1f} 分 '
+            f'(原 {stc["original_time"]} → {stc["corrected_time"]}; '
+            f'經度 {stc["longitude"]:.3f}°)'
+        )
+    pr = bd.get('place_resolution') or {}
+    if pr.get('source') == 'geonames':
+        lines.append(
+            f'出生地解析：{pr["matched_name"]}, {pr["country"]} '
+            f'(lon {pr["longitude"]:.3f}°, lat {pr["latitude"]:.3f}°, tz {pr["timezone"]})'
+        )
+
     soul_branch_zh = EARTHLY_BRANCH_ZH.get(prof['soul_branch'], prof['soul_branch'])
     lines.append(f'命宮地支：{soul_branch_zh}')
 

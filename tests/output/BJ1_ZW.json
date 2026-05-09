@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:36Z"
   },
   "subject": {
     "id": "Zhang Wei"
@@ -19,7 +19,26 @@
     "gender": "male",
     "timezone": "Asia/Shanghai",
     "place": {
-      "name": "Beijing, China"
+      "name": "Beijing, China",
+      "longitude": 116.39723,
+      "latitude": 39.9075,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Beijing",
+        "country": "CN",
+        "population": 18960744,
+        "latitude": 39.9075,
+        "longitude": 116.39723,
+        "timezone": "Asia/Shanghai"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": 1.97,
+      "original_time": "14:15",
+      "corrected_time": "14:16",
+      "longitude": 116.39723,
+      "tz_meridian_deg": 120.0
     }
   },
   "system": {

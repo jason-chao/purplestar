@@ -3,6 +3,7 @@ Main chart generation for 紫微斗數.
 """
 from __future__ import annotations
 import datetime
+from datetime import time as _dt_time
 from typing import Optional
 
 from purplestar.data.constants import (
@@ -13,6 +14,7 @@ from purplestar.data.constants import (
     HOUR_BRANCH, HOUR_ZH, MUTAGENS, TRANSFORM_ZH,
 )
 from purplestar.core.lunar import solar_to_lunar, get_year_gz, time_to_index, parse_time
+from purplestar.core.solar_time import apply_true_solar, tz_meridian_deg
 from purplestar.core.palace import (
     get_soul_and_body, get_palace_names, get_palace_stems,
     get_horoscope, fix_index, branch_to_palace, palace_to_branch,
@@ -32,6 +34,8 @@ def generate_chart(
     timezone: Optional[str] = None,
     place: Optional[str] = None,
     name: Optional[str] = None,
+    longitude: Optional[float] = None,
+    latitude: Optional[float] = None,
 ) -> dict:
     """Generate a complete 紫微斗數 natal chart.
 
@@ -40,8 +44,15 @@ def generate_chart(
         solar_date: Solar date string 'YYYY-MM-DD'
         time: Time string 'HH:MM' or None for unknown
         timezone: Timezone string e.g. 'Asia/Taipei'
-        place: Place name string
+        place: Place name string. If `longitude` is not given, attempts to
+            resolve via geonamescache to fill in lon/lat/tz for true-solar
+            correction.
         name: Person identifier
+        longitude: Optional birth longitude (decimal degrees, east positive).
+            When supplied together with `time` and a real IANA `timezone`,
+            the clock time is converted to 真太陽時 before casting.
+        latitude: Optional birth latitude (decimal degrees). Recorded as
+            metadata only.
 
     Returns:
         Chart dict suitable for JSON serialization or plaintext output.
@@ -49,6 +60,67 @@ def generate_chart(
     # Parse inputs
     parts = solar_date.split('-')
     sy, sm, sd = int(parts[0]), int(parts[1]), int(parts[2])
+
+    # Place resolution + true-solar correction. Defaults to today's
+    # behaviour: no resolution, no correction.
+    place_resolution = {'source': 'none'}
+    solar_time_correction = {'applied': False}
+    original_time = time
+
+    resolved_lon = longitude
+    resolved_lat = latitude
+    resolved_tz = timezone
+
+    if longitude is None and place:
+        try:
+            from purplestar.core.geo import resolve_place
+            match = resolve_place(place)
+        except ImportError:
+            match = None
+        if match is not None:
+            resolved_lon = match.lon
+            resolved_lat = match.lat
+            if not resolved_tz or resolved_tz == 'UTC':
+                resolved_tz = match.tz
+            place_resolution = {
+                'source': 'geonames',
+                'matched_name': match.name,
+                'country': match.country,
+                'population': match.population,
+                'latitude': match.lat,
+                'longitude': match.lon,
+                'timezone': match.tz,
+            }
+    elif longitude is not None:
+        place_resolution = {
+            'source': 'explicit',
+            'latitude': latitude,
+            'longitude': longitude,
+            'timezone': timezone,
+        }
+
+    if (resolved_lon is not None and time and resolved_tz
+            and resolved_tz != 'UTC'):
+        try:
+            t_parts = time.strip().split(':')
+            t_obj = _dt_time(int(t_parts[0]),
+                             int(t_parts[1]) if len(t_parts) > 1 else 0)
+            from datetime import date as _date
+            corrected_date, corrected_time, offset_min = apply_true_solar(
+                _date(sy, sm, sd), t_obj, resolved_lon, resolved_tz)
+            sy, sm, sd = corrected_date.year, corrected_date.month, corrected_date.day
+            time = corrected_time.strftime('%H:%M')
+            solar_time_correction = {
+                'applied': True,
+                'offset_minutes': round(offset_min, 2),
+                'original_time': original_time,
+                'corrected_time': time,
+                'longitude': resolved_lon,
+                'tz_meridian_deg': round(tz_meridian_deg(corrected_date, resolved_tz), 4),
+            }
+        except (ValueError, KeyError):
+            pass
+
     time_index = parse_time(time)
     time_known = time is not None and time.lower() not in ('unknown', '未知', '')
 
@@ -153,7 +225,8 @@ def generate_chart(
         'birth_data': {
             'calendar': 'solar',
             'solar_year': sy, 'solar_month': sm, 'solar_day': sd,
-            'solar_date': solar_date,
+            'solar_date': f'{sy:04d}-{sm:02d}-{sd:02d}',
+            'input_solar_date': solar_date,
             'lunar_year': lunar_year, 'lunar_month': lm, 'lunar_day': ld,
             'is_leap_month': is_leap,
             'time_index': time_index,
@@ -161,8 +234,12 @@ def generate_chart(
             'hour_branch': HOUR_BRANCH[time_index],
             'hour_zh': HOUR_ZH[time_index],
             'gender': gender,
-            'timezone': timezone or 'UTC',
+            'timezone': resolved_tz or 'UTC',
             'place': place,
+            'longitude': resolved_lon,
+            'latitude': resolved_lat,
+            'place_resolution': place_resolution,
+            'solar_time_correction': solar_time_correction,
             'year_stem': year_stem,
             'year_branch': year_branch,
             'year_gz_zh': lunar_year_stem + lunar_year_branch + '年',

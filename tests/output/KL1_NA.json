@@ -4,7 +4,7 @@
   "default_locale": "zh-Hant",
   "meta": {
     "generated_by": "purplestar 1.0.0",
-    "generated_at": "2026-04-01T00:26:00Z"
+    "generated_at": "2026-05-09T08:11:37Z"
   },
   "subject": {
     "id": "Nurul Aina"
@@ -15,11 +15,30 @@
     "month": 9,
     "day": 11,
     "is_leap_month": false,
-    "hour_branch": "yin",
+    "hour_branch": "chou",
     "gender": "female",
     "timezone": "Asia/Kuala_Lumpur",
     "place": {
-      "name": "Kuala Lumpur, Malaysia"
+      "name": "Kuala Lumpur, Malaysia",
+      "longitude": 101.68653,
+      "latitude": 3.1412,
+      "resolution": {
+        "source": "geonames",
+        "matched_name": "Kuala Lumpur",
+        "country": "MY",
+        "population": 1453975,
+        "latitude": 3.1412,
+        "longitude": 101.68653,
+        "timezone": "Asia/Kuala_Lumpur"
+      }
+    },
+    "solar_time_correction": {
+      "applied": true,
+      "offset_minutes": -69.24,
+      "original_time": "03:20",
+      "corrected_time": "02:10",
+      "longitude": 101.68653,
+      "tz_meridian_deg": 120.0
     }
   },
   "system": {
@@ -1164,15 +1183,15 @@
         "element": "metal",
         "number": 4
       },
-      "life_master": "po_jun",
+      "life_master": "wu_qu",
       "body_master": "tian_ji",
-      "ming_palace_position": 5,
-      "body_palace_position": 9
+      "ming_palace_position": 6,
+      "body_palace_position": 8
     },
     "palaces": [
       {
         "position": 1,
-        "palace": "wealth",
+        "palace": "health",
         "stem": "geng",
         "branch": "yin",
         "is_body_palace": false,
@@ -1196,6 +1215,10 @@
             "category": "misc"
           },
           {
+            "star": "tian_shou",
+            "category": "misc"
+          },
+          {
             "star": "tian_wu",
             "category": "misc"
           },
@@ -1205,6 +1228,10 @@
           },
           {
             "star": "yin_sha",
+            "category": "misc"
+          },
+          {
+            "star": "tian_shi",
             "category": "misc"
           }
         ],
@@ -1217,7 +1244,7 @@
       },
       {
         "position": 2,
-        "palace": "children",
+        "palace": "wealth",
         "stem": "xin",
         "branch": "mao",
         "is_body_palace": false,
@@ -1233,7 +1260,11 @@
             "brightness": "wang"
           },
           {
-            "star": "tian_shou",
+            "star": "tian_gui",
+            "category": "misc"
+          },
+          {
+            "star": "feng_gao",
             "category": "misc"
           },
           {
@@ -1250,7 +1281,7 @@
       },
       {
         "position": 3,
-        "palace": "spouse",
+        "palace": "children",
         "stem": "ren",
         "branch": "chen",
         "is_body_palace": false,
@@ -1267,15 +1298,12 @@
             "category": "minor"
           },
           {
+            "star": "huo_xing",
+            "category": "minor",
+            "brightness": "xian"
+          },
+          {
             "star": "tian_xi",
-            "category": "misc"
-          },
-          {
-            "star": "tian_gui",
-            "category": "misc"
-          },
-          {
-            "star": "feng_gao",
             "category": "misc"
           },
           {
@@ -1296,15 +1324,17 @@
       },
       {
         "position": 4,
-        "palace": "siblings",
+        "palace": "spouse",
         "stem": "gui",
         "branch": "si",
         "is_body_palace": false,
         "stars": [
           {
-            "star": "huo_xing",
+            "star": "wen_qu",
             "category": "minor",
-            "brightness": "de"
+            "brightness": "miao",
+            "natal_transformation": "ke",
+            "transformation_source": "self"
           },
           {
             "star": "ba_zuo",
@@ -1336,7 +1366,7 @@
       },
       {
         "position": 5,
-        "palace": "life",
+        "palace": "siblings",
         "stem": "jia",
         "branch": "wu",
         "is_body_palace": false,
@@ -1347,22 +1377,11 @@
             "brightness": "miao"
           },
           {
-            "star": "wen_qu",
-            "category": "minor",
-            "brightness": "xian",
-            "natal_transformation": "ke",
-            "transformation_source": "self"
-          },
-          {
             "star": "tian_kui",
             "category": "minor"
           },
           {
             "star": "xian_chi",
-            "category": "misc"
-          },
-          {
-            "star": "en_guang",
             "category": "misc"
           },
           {
@@ -1383,7 +1402,7 @@
       },
       {
         "position": 6,
-        "palace": "parents",
+        "palace": "life",
         "stem": "yi",
         "branch": "wei",
         "is_body_palace": false,
@@ -1403,6 +1422,14 @@
             "category": "misc"
           },
           {
+            "star": "en_guang",
+            "category": "misc"
+          },
+          {
+            "star": "tai_fu",
+            "category": "misc"
+          },
+          {
             "star": "fei_lian",
             "category": "misc"
           }
@@ -1416,26 +1443,15 @@
       },
       {
         "position": 7,
-        "palace": "spirit",
+        "palace": "parents",
         "stem": "bing",
         "branch": "shen",
         "is_body_palace": false,
         "stars": [
           {
-            "star": "wen_chang",
-            "category": "minor",
-            "brightness": "de",
-            "natal_transformation": "ji",
-            "transformation_source": "self"
-          },
-          {
             "star": "tuo_luo",
             "category": "minor",
             "brightness": "xian"
-          },
-          {
-            "star": "tai_fu",
-            "category": "misc"
           },
           {
             "star": "gu_chen",
@@ -1451,10 +1467,10 @@
       },
       {
         "position": 8,
-        "palace": "property",
+        "palace": "spirit",
         "stem": "ding",
         "branch": "you",
-        "is_body_palace": false,
+        "is_body_palace": true,
         "stars": [
           {
             "star": "tian_fu",
@@ -1462,11 +1478,14 @@
             "brightness": "wang"
           },
           {
-            "star": "lu_cun",
-            "category": "minor"
+            "star": "wen_chang",
+            "category": "minor",
+            "brightness": "miao",
+            "natal_transformation": "ji",
+            "transformation_source": "self"
           },
           {
-            "star": "di_kong",
+            "star": "lu_cun",
             "category": "minor"
           },
           {
@@ -1499,10 +1518,10 @@
       },
       {
         "position": 9,
-        "palace": "career",
+        "palace": "property",
         "stem": "wu",
         "branch": "xu",
-        "is_body_palace": true,
+        "is_body_palace": false,
         "stars": [
           {
             "star": "tai_yin",
@@ -1511,6 +1530,10 @@
           },
           {
             "star": "zuo_fu",
+            "category": "minor"
+          },
+          {
+            "star": "di_kong",
             "category": "minor"
           },
           {
@@ -1536,7 +1559,7 @@
       },
       {
         "position": 10,
-        "palace": "friends",
+        "palace": "career",
         "stem": "ji",
         "branch": "hai",
         "is_body_palace": false,
@@ -1556,8 +1579,9 @@
             "category": "minor"
           },
           {
-            "star": "tian_cai",
-            "category": "misc"
+            "star": "ling_xing",
+            "category": "minor",
+            "brightness": "li"
           },
           {
             "star": "tian_yue_xing",
@@ -1565,10 +1589,6 @@
           },
           {
             "star": "tian_xu",
-            "category": "misc"
-          },
-          {
-            "star": "tian_shang",
             "category": "misc"
           }
         ],
@@ -1581,7 +1601,7 @@
       },
       {
         "position": 11,
-        "palace": "travel",
+        "palace": "friends",
         "stem": "geng",
         "branch": "zi",
         "is_body_palace": false,
@@ -1594,9 +1614,16 @@
             "transformation_source": "self"
           },
           {
-            "star": "ling_xing",
-            "category": "minor",
-            "brightness": "xian"
+            "star": "di_jie",
+            "category": "minor"
+          },
+          {
+            "star": "tian_cai",
+            "category": "misc"
+          },
+          {
+            "star": "tian_shang",
+            "category": "misc"
           }
         ],
         "markers": {
@@ -1608,7 +1635,7 @@
       },
       {
         "position": 12,
-        "palace": "health",
+        "palace": "travel",
         "stem": "xin",
         "branch": "chou",
         "is_body_palace": false,
@@ -1619,19 +1646,11 @@
             "brightness": "miao"
           },
           {
-            "star": "di_jie",
-            "category": "minor"
-          },
-          {
             "star": "hua_gai",
             "category": "misc"
           },
           {
             "star": "tian_ku",
-            "category": "misc"
-          },
-          {
-            "star": "tian_shi",
             "category": "misc"
           }
         ],
@@ -1648,8 +1667,8 @@
     "decade_limits": [
       {
         "age_range": [
-          84,
-          93
+          74,
+          83
         ],
         "palace_position": 1,
         "stem": "geng",
@@ -1674,8 +1693,8 @@
       },
       {
         "age_range": [
-          94,
-          103
+          84,
+          93
         ],
         "palace_position": 2,
         "stem": "xin",
@@ -1700,8 +1719,8 @@
       },
       {
         "age_range": [
-          104,
-          113
+          94,
+          103
         ],
         "palace_position": 3,
         "stem": "ren",
@@ -1726,8 +1745,8 @@
       },
       {
         "age_range": [
-          114,
-          123
+          104,
+          113
         ],
         "palace_position": 4,
         "stem": "gui",
@@ -1752,8 +1771,8 @@
       },
       {
         "age_range": [
-          4,
-          13
+          114,
+          123
         ],
         "palace_position": 5,
         "stem": "jia",
@@ -1778,8 +1797,8 @@
       },
       {
         "age_range": [
-          14,
-          23
+          4,
+          13
         ],
         "palace_position": 6,
         "stem": "yi",
@@ -1804,8 +1823,8 @@
       },
       {
         "age_range": [
-          24,
-          33
+          14,
+          23
         ],
         "palace_position": 7,
         "stem": "bing",
@@ -1830,8 +1849,8 @@
       },
       {
         "age_range": [
-          34,
-          43
+          24,
+          33
         ],
         "palace_position": 8,
         "stem": "ding",
@@ -1856,8 +1875,8 @@
       },
       {
         "age_range": [
-          44,
-          53
+          34,
+          43
         ],
         "palace_position": 9,
         "stem": "wu",
@@ -1882,8 +1901,8 @@
       },
       {
         "age_range": [
-          54,
-          63
+          44,
+          53
         ],
         "palace_position": 10,
         "stem": "ji",
@@ -1908,8 +1927,8 @@
       },
       {
         "age_range": [
-          64,
-          73
+          54,
+          63
         ],
         "palace_position": 11,
         "stem": "geng",
@@ -1934,8 +1953,8 @@
       },
       {
         "age_range": [
-          74,
-          83
+          64,
+          73
         ],
         "palace_position": 12,
         "stem": "xin",

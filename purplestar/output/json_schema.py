@@ -173,7 +173,22 @@ def _build_schema_doc(chart: dict) -> dict:
     }
 
     if bd.get('place'):
-        doc['birth_data']['place'] = {'name': bd['place']}
+        place_doc = {'name': bd['place']}
+        if bd.get('longitude') is not None:
+            place_doc['longitude'] = bd['longitude']
+        if bd.get('latitude') is not None:
+            place_doc['latitude'] = bd['latitude']
+        if bd.get('place_resolution'):
+            place_doc['resolution'] = bd['place_resolution']
+        doc['birth_data']['place'] = place_doc
+    elif bd.get('longitude') is not None:
+        doc['birth_data']['longitude'] = bd['longitude']
+        if bd.get('latitude') is not None:
+            doc['birth_data']['latitude'] = bd['latitude']
+    if bd.get('solar_time_correction'):
+        doc['birth_data']['solar_time_correction'] = bd['solar_time_correction']
+    if bd.get('input_solar_date') and bd['input_solar_date'] != bd['solar_date']:
+        doc['birth_data']['input_solar_date'] = bd['input_solar_date']
     if bd.get('input_clock_time'):
         doc['birth_data']['input_clock_time'] = bd['input_clock_time']
 
