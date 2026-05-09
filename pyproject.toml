@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "purplestar"
-version = "1.0.4"
+version = "1.0.5"
 description = "Purple Star Astrology (紫微斗數 or Zi Wei Dou Shu) natal chart generator"
 readme = "README.md"
 requires-python = ">=3.10"
